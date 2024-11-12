@@ -9,7 +9,7 @@
     Light shades (background, text-color): #bcbcbc
 ************************************* */
 section#mission-target img {
-  height: 400px;
+  height: 60vh;
   width: 100%;
   object-fit: cover;
   object-position: center;
@@ -17,9 +17,15 @@ section#mission-target img {
 }
 
 section#mission-target {
-  background-color: black;
+  background-color: #000000;
   color: #bcbcbc;
-  padding-bottom: 50px;
+  padding-top: 100px;
+  padding-bottom: 250px;
+  
+}
+
+section#mission-target h2{
+  margin-bottom: 30px;
 }
 
 h2 {
@@ -31,17 +37,16 @@ h2 {
 section#mission-target p {
   position: relative;
   font-size: 1.3em;
-  top: 30%;
+  top: 12%;
 }
 
 section#skills-target {
-  background-color: black;
+  background-color: #000000;
   color: #bcbcbc;
-  padding-bottom: 200px;
+  padding-top: 50px;
 }
 
 section#skills-target h2 {
-  padding-top: 400px;
   margin-bottom: 50px;
 }
 
@@ -66,6 +71,7 @@ section#contact-target {
   color: #bcbcbc;
   text-align: center;
   padding-bottom: 100px;
+  
 }
 
 section#contact-target a {
@@ -77,36 +83,15 @@ section#contact-target a:hover {
 }
 
 section#images-target {
-  background-color: black;
+  background-color: #000000;
   color: #bcbcbc;
   padding-bottom: 100px;
-}
-
-.carousel-item img {
-  object-fit: cover;
-  object-position: center;
-  height: 75vh;
-  overflow: hidden;
-}
-
-
-.carousel-item:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.3);
-}
-
-.carousel-caption {
-  z-index: 1;
+  
 }
 
 
 /* **************************************
-    MODULES
+  MODULES
 ************************************* */
 #hero-section {
   background-image: url("https://live.staticflickr.com/2699/4296129958_7c7d25747f_b.jpg");
@@ -134,9 +119,39 @@ section#images-target {
 #myface {
   max-width: 30vh;
   border-radius: 100%;
-  border: 20px solid #FFD700;
+  border: 17px solid #FFD700;
 }
 
+#revamp-text {
+  padding-top: 20px;
+  color: #FFD700
+}
+
+.row-2-skills {
+  margin-top: -100px;
+}
+
+.carousel-item img {
+  object-fit: cover;
+  object-position: center;
+  height: 75vh;
+  overflow: hidden;
+}
+
+
+.carousel-item:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.carousel-caption {
+  z-index: 1;
+}
 
 #footer-section {
   height: 100px;
@@ -175,8 +190,9 @@ section#images-target {
   color: #FFD700;
 }
 
+
 /* **************************************
-    RELAYOUT
+ RELAYOUT
 ************************************* */
 
 @media only screen and (min-width: 800px) {
@@ -188,4 +204,35 @@ section#images-target {
     overflow: hidden;
   }
 
+}
+
+@media only screen and (max-width: 1400px) {
+  section#mission-target p {
+    position: relative;
+    font-size: 1.3em;
+    top: 0%;
+  }
+
+  section#mission-target p {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  section#mission-target img {
+    height: 40vh;
+  }
+
+  section#mission-target p {
+    padding-top: 30px;
+  }
+}
+
+
+@media only screen and (max-width: 500px) {
+
+  section#mission-target img {
+    height: 30vh;
+  }
 }
